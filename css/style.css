@@ -1,0 +1,161 @@
+/* bootstrap hamburger */
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #f4f4f4;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/* 3line color */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient(263deg #333 0%, #f4f4f4 100%);
+}
+
+/* bootstrap hamburger */
+
+.bg-color {
+    background: #000202;
+}
+
+.text-hover:hover {
+    color: #b43d85;
+}
+
+.Mincho {
+    font-family: 'Shippori Mincho', serif;
+}
+
+.noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.zen {
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.bg-color-1 {
+    background: #eee;
+}
+
+#jobs .grid_job {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+#jobs .grid_job img {
+    width: 100%;
+}
+
+/* effect */
+.effect {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.effect:hover .image {
+    opacity: 0.3;
+}
+
+.effect:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #000202;
+    color: #f4f4f4;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* effect */
+
+@media (max-width: 767.98px) {
+    #jobs .grid_job {
+        grid-template-columns: 1fr;
+    }
+}
